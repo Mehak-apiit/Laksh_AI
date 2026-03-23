@@ -21,6 +21,7 @@ app.use('/api/resume', require('./routes/resume'));
 
 // Keep AI routes
 app.use('/api/ai', require('./routes/ai'));
+app.use('/api/chat', require('./routes/chat'));
 
 // MongoDB Connection
 mongoose.connect(process.env.MONGODB_URI)

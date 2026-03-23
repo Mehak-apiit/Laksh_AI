@@ -14,6 +14,8 @@ app.use('/uploads', express.static('uploads'));
 
 app.use('/api/auth', require('./routes/auth'));
 app.use('/api/profile', require('./routes/profile'));
+app.use('/uploads', express.static('uploads'));
+app.use('/api/resume', require('./routes/resume'));
 //app.use('/api/ai', require('./routes/ai'));
 
 // MongoDB Connection
